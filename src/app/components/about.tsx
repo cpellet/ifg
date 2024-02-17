@@ -30,7 +30,7 @@ export default function About() {
                 <div className="mx-auto lg:mx-0 flex flex-col md:flex-row md:justify-between items-center md:gap-x-12">
                     <div>
                         <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl mt-5 md:mt-0">About us</h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                        <p className="mt-10 text-lg leading-8 text-gray-600">
                             IFG is a group of ambitious students with enthusiasm for the financial services industry. We encourage you to join our team if you would like to learn more about the industry or practice your skills as a part of our stock pitch or industry research teams.
                         </p>
                     </div>
@@ -39,7 +39,7 @@ export default function About() {
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">What we do</h2>
-                <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+                <div className="mx-auto mt-10 max-w-2xl lg:max-w-none">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
                         {items.map((feature) => (
                             <div key={feature.name} className="flex flex-col">
