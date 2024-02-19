@@ -67,7 +67,7 @@ export default function Contact() {
                                 </dt>
                                 <dd>
                                     <a className="hover:text-gray-900" href="mailto:hello@example.com">
-                                        hello@example.com
+                                        hello@inseadfinancegroup.com
                                     </a>
                                 </dd>
                             </div>

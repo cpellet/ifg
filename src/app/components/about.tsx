@@ -39,7 +39,7 @@ export default function About() {
             </div>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">What we do</h2>
-                <div className="mx-auto mt-10 max-w-2xl lg:max-w-none">
+                <div className="mx-auto mt-16 max-w-2xl lg:max-w-none">
                     <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
                         {items.map((feature) => (
                             <div key={feature.name} className="flex flex-col">
@@ -53,6 +53,16 @@ export default function About() {
                             </div>
                         ))}
                     </dl>
+                </div>
+            </div>
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-24">
+                <div className="grid md:grid-cols-2 mt-12 place-items-center">
+                    <div>
+                        <Image className="h-auto rounded-lg w-96 h-96" height={200} width={96} src="/img2.jpeg" alt="" />
+                    </div>
+                    <div>
+                        <Image className="h-auto rounded-lg w-96 h-96" height={200} width={96} src="/img3.jpeg" alt="" />
+                    </div>
                 </div>
             </div>
         </div>

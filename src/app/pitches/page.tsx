@@ -9,6 +9,8 @@ const products = [
         name: 'Novo Nordisk',
         imageSrc: 'pitch1.png',
         imageAlt: 'TODO',
+        date: '2024-01-17',
+        datetime: '2024-01-17',
         href: 'Novo Nordisk Stock Pitch.pdf'
     },
 ];
@@ -30,24 +32,27 @@ export default function PitchesPage() {
                     </div>
                 </div>
                 <div className="grid grid-cols-2 border-l border-gray-200 md:grid-cols-3 lg:grid-cols-4 mt-12 mx-12">
-                    {products.map((product) => (
-                        <div key={product.id} className="group relative border-b border-r border-gray-200 p-4 sm:p-6">
-                            <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75">
-                                <img
-                                    src={product.imageSrc}
-                                    alt={product.imageAlt}
-                                    className="h-full w-full object-cover object-center"
-                                />
+                    {products.map((post) => (
+                        <article
+                            key={post.id}
+                            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+                        >
+                            <img src={post.imageSrc} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+                            <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
+                            <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
+
+                            <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                                <time dateTime={post.datetime} className="mr-8">
+                                    {post.date}
+                                </time>
                             </div>
-                            <div className="pb-4 pt-10 text-center">
-                                <h3 className="text-sm font-medium text-gray-900">
-                                    <a href={product.href}>
-                                        <span aria-hidden="true" className="absolute inset-0" />
-                                        {product.name}
-                                    </a>
-                                </h3>
-                            </div>
-                        </div>
+                            <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                                <a href={post.href}>
+                                    <span className="absolute inset-0" />
+                                    {post.name}
+                                </a>
+                            </h3>
+                        </article>
                     ))}
                 </div>
             </div>
