@@ -16,6 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta name="google-site-verification" content="ZedLJZHzMUth-z7iKPMSmfvG6avC-CZsSVG1ruMpDMM" />
+      </head>
       <body className={garamond.className}>{children}</body>
     </html>
   );
