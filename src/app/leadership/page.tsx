@@ -68,6 +68,14 @@ const people = [
             'indra.jpeg',
         linkedinUrl: 'https://www.linkedin.com/in/indraotgonbaatar/',
     },
+    {
+        name: 'Guillaume Lüber',
+        role: 'VP Events',
+        country: 'Switzerland',
+        imageUrl:
+            'guillaume.jpeg',
+        linkedinUrl: 'https://www.linkedin.com/in/guillaume-luber/',
+    }
 ]
 
 export default function LeadershipPage() {
@@ -89,7 +97,9 @@ export default function LeadershipPage() {
                         {people.map((person) => (
                             <li key={person.name}>
                                 <div className="mx-auto h-56 w-56" style={{ position: "relative" }}>
-                                    <Image src={person.imageUrl} alt={person.name} fill className="rounded-full" objectFit="cover" />
+                                    <Image src={person.imageUrl} alt={person.name} fill className="rounded-full" style={{
+                                        objectFit: "cover",
+                                    }} />
                                 </div>
                                 <h3 className="mt-6 text-lg font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                 <p className="text-md leading-6 text-gray-600">{person.role}</p>

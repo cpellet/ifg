@@ -58,10 +58,14 @@ export default function About() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8 mt-24">
                 <div className="grid md:grid-cols-2 mt-12 place-items-center">
                     <div>
-                        <Image className="h-auto rounded-lg w-96 h-96" height={200} width={96} src="/img2.jpeg" alt="" />
+                        <Image className="rounded-lg w-96 h-96 m-2" height={96} width={96} src="/img2.jpeg" alt="" style={{
+                            objectFit: 'cover'
+                        }} />
                     </div>
                     <div>
-                        <Image className="h-auto rounded-lg w-96 h-96" height={200} width={96} src="/img3.jpeg" alt="" />
+                        <Image className="rounded-lg w-96 h-96 m-2" height={96} width={96} src="/img3.jpeg" alt="" style={{
+                            objectFit: 'cover'
+                        }} />
                     </div>
                 </div>
             </div>

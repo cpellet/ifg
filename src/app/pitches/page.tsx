@@ -13,6 +13,15 @@ const products = [
         datetime: '2024-01-17',
         href: 'Novo Nordisk Stock Pitch.pdf'
     },
+    {
+        id: 2,
+        name: 'Diageo',
+        imageSrc: 'pitch2.png',
+        imageAlt: 'TODO',
+        date: '2024-03-07',
+        datetime: '2024-03-07',
+        href: 'Diageo.pdf'
+    }
 ];
 
 function classNames(...classes: string[]) {
@@ -31,11 +40,11 @@ export default function PitchesPage() {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 border-l border-gray-200 md:grid-cols-3 lg:grid-cols-4 mt-12 mx-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 mt-12 mx-12">
                     {products.map((post) => (
                         <article
                             key={post.id}
-                            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+                            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 m-2"
                         >
                             <img src={post.imageSrc} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
                             <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
