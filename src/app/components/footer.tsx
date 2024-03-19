@@ -88,7 +88,7 @@ export default function Footer() {
                     ))}
                 </div>
                 <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-                    &copy; 2024 INSEAD Finance Group. Website by <a href="https://www.linkedin.com/in/cyrus-pellet/">Cyrus</a>. All rights reserved.
+                    &copy; 2024 INSEAD Finance Group. Website by <a href="https://cyruspellet.com">Cyrus</a>. All rights reserved.
                 </p>
             </div>
         </footer>
